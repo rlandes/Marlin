@@ -568,9 +568,11 @@
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
   // autotune settings found for 400x400 silicone 120v 500w heater Thermistor - NTC100K
-  #define DEFAULT_bedKp 33.27
-  #define DEFAULT_bedKi 6.65
-  #define DEFAULT_bedKd 111.02
+
+  #define DEFAULT_bedKp 34.07
+  #define DEFAULT_bedKi 5.99
+  #define DEFAULT_bedKd 129.27
+
 #endif // PIDTEMPBED
 
 #if EITHER(PIDTEMP, PIDTEMPBED)
@@ -708,7 +710,7 @@
 #define Z_DRIVER_TYPE  TMC2209
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-//#define Z2_DRIVER_TYPE TMC2209
+#define Z2_DRIVER_TYPE TMC2209
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 #define E0_DRIVER_TYPE TMC2209
